@@ -1,6 +1,5 @@
 def square_array(array)
-  arr = [1,2,3]
-  array.each { |i| arr << i ** 2 }
-end 
+  array.each_with_object([1,2,3]) { |i,arr| arr << i ** 2 }
+end
 
   
